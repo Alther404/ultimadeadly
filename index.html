@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UltimateDeadly — стример</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="UltimateDeadly — стримы, клипы и достижения. Поддержи стримера!" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">UltimateDeadly</div>
+      <nav class="nav" id="nav">
+        <a href="#home">Главная</a>
+        <a href="#stream">Стрим</a>
+        <a href="#clips">Клипы</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="title">UltimateDeadly</h1>
+          <p class="subtitle">Стримы, клэпы и трэш-эпичные моменты. Подписывайся и поддержи канал!</p>
+
+          <div class="social-row">
+            <!-- заменяй href на реальные ссылки -->
+            <a class="social" id="link-twitch" href="#" target="_blank" title="Twitch">Twitch</a>
+            <a class="social" id="link-youtube" href="#" target="_blank" title="YouTube">YouTube</a>
+            <a class="social" id="link-tiktok" href="#" target="_blank" title="TikTok">TikTok</a>
+            <a class="social" id="link-discord" href="#" target="_blank" title="Discord">Discord</a>
+            <a class="social" id="link-steam" href="#" target="_blank" title="Steam">Steam</a>
+            <a class="donate" id="link-donate" href="#" target="_blank" title="Donate">Поддержать</a>
+          </div>
+
+          <div class="tags">
+            <span>#FPS</span> <span>#PvP</span> <span>#БезФильтра</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="stream-card">
+            <div class="stream-header">
+              <div class="status-dot" id="live-dot"></div>
+              <div class="status-text" id="live-text">Оффлайн</div>
+            </div>
+
+            <!-- Плеер: вставь embed сюда. По умолчанию — заглушка -->
+            <div id="player" class="player">
+              <!-- Placeholder image / iframe -->
+              <div class="player-placeholder">
+                <div class="ph-text">Плеер стрима (здесь будет embed)</div>
+                <div class="ph-sub">Когда выберете платформу — замените контейнер на Twitch/YouTube embed</div>
+              </div>
+            </div>
+
+            <div class="stream-actions">
+              <button class="btn" onclick="openLink('#')">Перейти на канал</button>
+              <button class="btn ghost" onclick="openLink('#')">Подписаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIPS -->
+    <section id="clips" class="section">
+      <div class="container section-inner">
+        <h2>Клипы</h2>
+        <div class="clips-grid">
+          <!-- Заполни реальными ссылками на клипы — пока заглушки -->
+          <div class="clip">Клип 1</div>
+          <div class="clip">Клип 2</div>
+          <div class="clip">Клип 3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section dark">
+      <div class="container section-inner">
+        <h2>Достижения</h2>
+        <div class="ach-grid">
+          <div class="ach-card">
+            <h3>Топ донат</h3>
+            <p>Igor — 5000₸</p>
+          </div>
+          <div class="ach-card">
+            <h3>Лучший матч</h3>
+            <p>Режим: Hardcore — 1 место</p>
+          </div>
+          <div class="ach-card">
+            <h3>Особое событие</h3>
+            <p>Марафон 24 часа — 07.12.2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="section">
+      <div class="container section-inner">
+        <h2>Контакты</h2>
+        <p>По сотрудничеству и вопросам писат в соцсети или на Discord.</p>
+        <div class="contact-row">
+          <div>Discord: <span id="discord-name">--</span></div>
+          <div>Donate: <a id="donate-link" href="#" target="_blank">Ссылка</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© UltimateDeadly — Все права не зарегистрированы</div>
+      <div class="small">Сделано в киберпунк стиле</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
